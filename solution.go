@@ -10,8 +10,6 @@ import (
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
-
-
 type sideQuantity int
 
 const (
@@ -24,7 +22,6 @@ const (
 
 
 func CalcSquare(sideLen float64, sidesNum sideQuantity) float64 {
-
 	switch sidesNum {
 	case SidesTriangle:
 		square := math.Sqrt(3)/4*math.Pow(sideLen, 2)
@@ -40,6 +37,5 @@ func CalcSquare(sideLen float64, sidesNum sideQuantity) float64 {
 	default:
 		return 0
 	}
-
 }
 
